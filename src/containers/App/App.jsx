@@ -1,9 +1,14 @@
+import PeoplePage from "../PeoplePage/"
 import styles from "./App.module.css";
 
 import { getApiResource } from '../../utils/network';
 
 const App = () => {
-  return (<div className={styles.header}>Хай</div>);
+  return (
+    <>
+      <PeoplePage/>
+    </>
+  );
 };
 
 export default App;
