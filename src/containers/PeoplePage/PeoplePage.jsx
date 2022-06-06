@@ -1,14 +1,13 @@
+// liabrery
 import { useState, useEffect } from "react";
 import PropTypes from "prop-types";
 
+import { withErrorApi } from "@hoc-helpers/withApiError";
+import PeopleList from "@components/PeoplePage/PeopleList/";
 import { getApiResource } from "@utils/network";
 import { API_PEOPLE } from "@constants/api";
-
 import { getPeopleId, getPeopleImage } from "@services/getPeopleData";
-// HOC
-import { withErrorApi } from "@hoc-helpers/withApiError";
 
-import PeopleList from "@components/PeoplePage/PeopleList/";
 import styles from "./PeoplePage.module.css";
 
 const PeoplePage = ({ setErrorApi }) => {
