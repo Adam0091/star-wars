@@ -1,4 +1,6 @@
 import { useState, useEffect } from "react";
+import PropTypes from "prop-types";
+
 import { getApiResource } from "@utils/network";
 import { API_PEOPLE } from "@constants/api";
 
@@ -14,15 +16,15 @@ const PeoplePage = ({ setErrorApi }) => {
 
   const getResource = async (url) => {
     const res = await getApiResource(url);
-    
-    if(res) {
-      const peopleList = res.results.map(({name, url}) => {
+
+    if (res) {
+      const peopleList = res.results.map(({ name, url }) => {
         const id = getPeopleId(url);
         const img = getPeopleImage(id);
-  
-        return {id, name, img};
+
+        return { id, name, img };
       });
-  
+
       setPeople(peopleList);
       setErrorApi(false);
     } else {
@@ -34,23 +36,11 @@ const PeoplePage = ({ setErrorApi }) => {
     getResource(API_PEOPLE);
   }, []);
 
-  // return (
-  //   <>
-  //     {errorApi 
-  //       ? <h2>API Error</h2>
-  //       : (
-  //         people && <PeopleList people={people} />
-  //       )
-  //     }
-  //   </>
-  // );
+  return <>{people && <PeopleList people={people} />}</>;
+};
 
-  return (
-    <>
-      {people && <PeopleList people={people} />}
-    </>
-  )
-
+PeoplePage.propTypes = {
+  setErrorApi: PropTypes.func,
 };
 
 export default withErrorApi(PeoplePage);
