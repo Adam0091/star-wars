@@ -15,9 +15,8 @@
   },
   "scripts": {
     "lint": "eslint ./src/*.js --fix",
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
+    "start": "react-app-rewired start",
+    "test": "react-app-rewired test",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
@@ -40,6 +39,8 @@
   },
   "devDependencies": {
     "eslint": "^8.16.0",
-    "eslint-plugin-react": "^7.30.0"
+    "eslint-plugin-react": "^7.30.0",
+    "react-app-rewire-alias": "^1.1.7",
+    "react-app-rewired": "^2.2.1"
   }
 }
