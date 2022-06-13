@@ -1,0 +1,11 @@
+.link {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 20px;
+}
