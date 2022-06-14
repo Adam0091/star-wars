@@ -1,17 +1,19 @@
 .list__container {
   max-width: 1080px;
-  margin: 0 auto;
+  margin: 30px auto;
+  padding: 0;
 
   display: flex;
-  row-gap: 20px;
-  column-gap: 20px;
-  justify-content: space-between;
+  justify-content: center;
+  row-gap: 30px;
+  column-gap: 30px;
   flex-wrap: wrap;
+
   list-style: none;
 }
 .list__item {
   width: 190px;
-  margin: var(--spacing-medium);
+  margin: 0;
   border-radius: var(--border-radius-small);
   background-color: var(--color-white);
 
