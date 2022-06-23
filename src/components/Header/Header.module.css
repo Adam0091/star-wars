@@ -1,12 +1,12 @@
 .container {
   display: flex;
-  align-items: center;
+  padding-right: 40px;
   margin-bottom: var(--spacing-large);
 }
 
 .list__container {
   display: flex;
-  flex-wrap: wrap;
+  align-items: center;
   list-style: none;
 }
 
@@ -33,4 +33,17 @@
 .list__container :global(a.active) {
   border: 2px solid var(--color-violet);
   color: var(--color-violet);
+}
+
+.list__container a.active {
+  border: 2px solid var(--color-violet);
+  color: var(--color-violet);
+}
+
+.logo {
+  width: 60px;
+  height: 60px;
+  margin-right: var(--spacing-large);
+  object-fit: cover;
+  object-position: center center;
 }

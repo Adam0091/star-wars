@@ -1,0 +1,28 @@
+.favorite__link {
+  position: relative;
+  text-decoration: none;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+  width: 60px;
+  height: 60px;
+  min-width: 30px;
+
+  margin-left: auto;
+  color: var(--color-white);
+}
+.counter {
+  position: absolute;
+  display: block;
+  background-color: rgb(98, 33, 33);
+  top: -10px;
+  left: -10px;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}

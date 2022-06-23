@@ -20,7 +20,6 @@ export const changeHTTP = (url) => {
 export const getApiResource = async (url) => {
   try {
     const res = await fetch(url);
-
     if (!res.ok) {
       console.error("Could not fetch", res.status);
       return false;
@@ -31,4 +30,20 @@ export const getApiResource = async (url) => {
     console.error("Could not fetch", error.message);
     return false;
   }
+};
+
+export const makeConcurrentRequest = async (urls) => {
+  console.log(urls);
+  const res = await Promise.all(
+    urls.map((res) => {
+      return fetch(res).then((res) => res.json());
+    })
+  );
+
+  if (!res.ok) {
+    console.error("Could not fetch", res.status);
+    return false;
+  }
+
+  return res;
 };

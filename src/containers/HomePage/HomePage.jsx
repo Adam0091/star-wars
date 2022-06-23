@@ -1,16 +1,15 @@
-import PropTypes from "prop-types";
+import ChooseSide from '@components/HomePage/ChooseSide';
 import styles from "./HomePage.module.css";
+
 
 const Home = () => {
   return (
     <>
-      <h1 className='header__text'>HomePage</h1>
+      <h2 className='header__text'>HomePage</h2>
+      <ChooseSide></ChooseSide>
     </>
   );
 };
 
-Home.propTypes = {
-  text: PropTypes.string,
-};
 
 export default Home;

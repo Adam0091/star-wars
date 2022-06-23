@@ -4,9 +4,15 @@ import { Link } from "react-router-dom";
 import UIButton from "../../UIKit/UIButton/index";
 import styles from "./PeopleNavigation.module.css";
 
-const PeopleNavigtion = ({ getResource, prevPage, nextPage, counterPage }) => {
-  const handleChangeNext = () => getResource(nextPage);
-  const handleChangePrev = () => getResource(prevPage);
+const PeopleNavigtion = ({ getResource, prevPage, nextPage, counterPage, setPeople }) => {
+  const handleChangeNext = () =>{
+    setPeople(null);
+    getResource(nextPage);
+  } 
+  const handleChangePrev = () =>{
+    setPeople(null);
+    getResource(prevPage);
+  }
 
   return (
     <div className={styles.container}>

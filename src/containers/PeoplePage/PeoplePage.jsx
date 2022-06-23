@@ -11,6 +11,7 @@ import {
   getPeopleImage,
   getPeoplePageId,
 } from "@services/getPeopleData";
+import UILoading from "@ui/UILoading";
 import { useQueryParams } from "@hooks/useQueryParams";
 
 import styles from "./PeoplePage.module.css";
@@ -26,7 +27,7 @@ const PeoplePage = ({ setErrorApi }) => {
 
   const getResource = async (url) => {
     const res = await getApiResource(url);
-
+    console.log(res);
     if (res) {
       const peopleList = res.results.map(({ name, url }) => {
         const id = getPeopleId(url);
@@ -51,13 +52,21 @@ const PeoplePage = ({ setErrorApi }) => {
 
   return (
     <>
+      <h2 className='header__text'>People</h2>
       <PeopleNavigation
         getResource={getResource}
         prevPage={prevPage}
         nextPage={nextPage}
         counterPage={counterPage}
+        setPeople={setPeople}
       />
-      {people && <PeopleList people={people} />}
+      {people ? (
+        <PeopleList people={people} />
+      ) : (
+        <div className={styles.container__loading}>
+          <UILoading theme='white' isShadow />
+        </div>
+      )}
     </>
   );
 };
