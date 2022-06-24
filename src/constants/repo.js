@@ -1,1 +1,1 @@
-export const REPO_NAME = "star-wars"
+export const REPO_NAME = "https://adam0091.github.io/star-wars/";

@@ -3,7 +3,7 @@ import PeoplePage from '@containers/PeoplePage';
 import PersonPage from '@containers/PersonPage';
 import FavoritesPage from '@containers/FavoritesPage';
 import NotFoundPage from '@containers/NotFoundPage';
-import SearchPage from './../containers/SearchPage/SearchPage';
+import SearchPage from '@containers/SearchPage/SearchPage';
 
 const routesConfig = [
     {

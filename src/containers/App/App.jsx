@@ -1,15 +1,15 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route, HashRouter } from "react-router-dom";
 
 import routesConfig from "@routes/routesConfig";
 import Header from "@components/Header";
 
 import styles from "./App.module.css";
-import { REPO_NAME } from '@constants/repo';
+import { REPO_NAME } from "@constants/repo";
 
 const App = () => {
   return (
     <>
-      <BrowserRouter basename={`/${REPO_NAME}/`}>
+      <HashRouter>
         <div className={styles.wrapper}>
           <Header />
 
@@ -19,7 +19,7 @@ const App = () => {
             ))}
           </Routes>
         </div>
-      </BrowserRouter>
+      </HashRouter>
     </>
   );
 };
