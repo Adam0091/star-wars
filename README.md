@@ -1,70 +1,70 @@
-# Getting Started with Create React App
+# Star Wars
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<a href="https://adam0091.github.io/star-wars/" md-fab>
+   <md-icon class="md-24">Deploy</md-icon>
+</a>
 
-## Available Scripts
+##  API
+- https://swapi.dev (основное API)
+- https://swapi.py4e.com (запасное API - если основное не работает)
+- https://starwars-visualguide.com (изображения для API)
 
-In the project directory, you can run:
+---
 
-### `npm start`
+##  Рассмотренные темы
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### React.js
+- Разворачивание приложения с `create-react-app`
+- Состояние компонента (хук `useState`)
+- Жизненный цикл компонента (хук `useEffect`)
+- Context API (хук `useContext`)
+- Рефы и DOM (хук `useRef`)
+- Мемоизация (хук `useCallback`)
+- Создание собственных хуков
+- Фрагменты
+- Паттерн `Higher-Order Component`
+- Паттерн `Подъём состояния`
+- Обработка событий
+- Controlled Components
+- Подключение CSS, `css-modules`, библиотека `classnames`
+- Списки и ключи, `Reconciliation Algorithm`
+- Отложенная загрузка компонентов `React.lazy()`
+- Библиотека `prop-types` для валидации props
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### React Router
+- Базовый роутинг
+- URL Parameters
+- Query Parameters
+- Обработка страницы 404 (Not Found)
+- Хуки `useLocation` и `useHistory`
 
-### `npm test`
+### Redux
+- Базовая структура react-redux-приложения
+- Хуки `useDispatch`, `useSelector`
+- Redux Middleware
+- Создание асинхронных action с библиотекой `redux-thunk`
+- Отслеживание состояния store с `redux-devtools-extension`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Общее
+- Задание Alias в React-приложении (библиотека `react-app-rewire-alias`)
+- Деплой приложения на GitHub Pages (библиотека `gh-pages`)
+- Создание Ui-Kit из визуальных компонентов и публикация в `@storybook`
+- Библиотека `lodash` с готовыми функциями
+- `Visual Studio Code`. Сниппеты и плагины
 
-### `npm run build`
+### JavaScript
+- Методы работы с массивами: `map`, `filter`, `forEach`
+- Асинхронность: `Promise`, `Async Functions`
+- ES6-модули (import и export)
+- Оператор разворота для объектов (props для компонента)
+- Деструктуризация массивов и объектов
+- Тернарные операторы
+- Работа с Local Storage
+- Работа с API с использованием `Fetch`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+### Вёрстка
+- CSS Custom Properties, изменение через JavaScript
+- CSS Filters
+- CSS Flexbox
+- CSS Multi Columns
+- Стилизация скроллбара
